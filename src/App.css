@@ -1,0 +1,9 @@
+.case {
+  background-color: #1B1B1B;
+  flex-direction: column;
+}
+
+/* Add this to prevent horizontal scrolling */
+html, body {
+  overflow-x: hidden;
+}

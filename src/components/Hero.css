@@ -1,0 +1,150 @@
+.line {
+    position: absolute; /* Position it relative to the parent container */
+    /* top: 50%; */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust for centering */
+    width: 2px; /* Line thickness */
+    height: 520px; /* Line height */
+    background-color: #1B1B1B; /* Line color */
+    z-index: 2; /* Ensure it's above the video */
+    opacity: 0;
+  }
+  
+
+/* Navbar styling (Apple-inspired) */
+.navbar {
+    position: fixed; /* Sticks to the top of the viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Full-width */
+    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    padding: 0.5rem 2rem; /* Adjust padding for a sleek look */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Space out links evenly */
+    z-index: 10; /* Ensures it stays on top */
+    backdrop-filter: blur(5px); /* Smooth glass-like blur */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Navbar links */
+  .navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin: 0 1rem;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500; /* Medium weight for sleek look */
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .navbar a:hover {
+    color: #007aff; /* Blue hover effect */
+    background-color: rgba(255, 255, 255, 0.1); /* Subtle background highlight */
+    border-radius: 10px; /* Rounded edges for hover state */
+  }
+  
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    .navbar ul {
+      flex-direction: column; /* Stack items vertically */
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.9); /* Full background for dropdown */
+      padding: 1rem;
+      width: 100%;
+      display: none; /* Initially hidden */
+    }
+  
+    .navbar ul.show {
+      display: flex; /* Show when toggled */
+    }
+  
+    .navbar li {
+      margin: 0.5rem 0;
+    }
+  }
+  
+  /* Button to toggle the navbar menu on mobile */
+  .navbar .menu-toggle {
+    display: none; /* Hidden on larger screens */
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .navbar .menu-toggle {
+      display: block; /* Visible on smaller screens */
+    }
+  }
+  
+
+.hero-container {
+    position: relative; /* For positioning other elements if needed */
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Ensure no scrolling if the video is slightly larger */
+    display: flex; /* Optional: Use for centering content inside the container */
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Make the video cover the entire screen */
+  .hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200vh; /* Full viewport width */
+    height: 90vh; /* Full viewport height */
+    border-bottom-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    object-fit: cover; 
+    transform: translate(-50%, -50%); 
+  }
+  
+  /* Text styling */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(20px); /* Initial off-screen position */
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    opacity: 0; /* Hidden initially */
+  }
+
+  /* Buy Now button styling */
+.buy-now-btn {
+    position: relative; /* Relative to its current position */
+    top: 230px; /* Move the button down */
+    opacity: 0; /* Hidden initially */
+    scale: 0.4; /* Slightly smaller initially */
+    background-color: #121212; /* PlayStation Red */
+    color: white;
+    border: none;
+    border-radius: 60px;
+    padding: 0.45rem 1.65rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .buy-now-btn:hover {
+    background-color: #393838; /* Darker red on hover */
+    transform: scale(1.1); /* Slight zoom on hover */
+  }

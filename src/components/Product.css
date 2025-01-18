@@ -1,0 +1,82 @@
+.product-section {
+    display: flex;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+  }
+  
+  .background-half {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .background-half.black {
+    background-color: #1B1B1B;
+    color: #fff; /* Text color adjustment */
+  }
+  
+  .background-half.white {
+    /* border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px; */
+    border-radius: 15px;
+    background-color: #fff;
+    color: #000; /* Text color adjustment */
+  }
+  
+  .product-container {
+    text-align: center;
+    width: 90%;
+  }
+  
+  .product-card {
+    background: transparent;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 350px; /* Fixed width for all images */
+    height: 320px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the aspect ratio is maintained while filling the area */
+    /* margin-bottom: 15px; */
+  }
+  
+  .product-name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  
+  .product-price {
+    font-size: 20px;
+    margin-bottom: -15px;
+  }
+  
+  .navigation-buttons {
+    margin-bottom: 20px;
+  }
+  
+  .nav-button {
+    background-color: #0070f3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .nav-button:hover {
+    background-color: #005bb5;
+  }
+  
