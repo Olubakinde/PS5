@@ -2,7 +2,7 @@ import Hero from './components/Hero'
 import Content from './components/Content'
 import './App.css'
 import Gaming from './components/Gaming'
-import Product from './components/product'
+import Product from './components/Product'
 import Footer from './components/footer'
 
 function App() {
